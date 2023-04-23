@@ -10,7 +10,7 @@ public class Validator {
             return false;
         }
         if (phoneNumber.length() < 6 || phoneNumber.length() > 10) {
-            return false;
+            return true;
         }
         return phoneNumber.matches("[0-9]+");
     }
