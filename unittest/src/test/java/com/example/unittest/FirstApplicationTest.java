@@ -62,9 +62,4 @@ public class FirstApplicationTest {
         Assertions.assertEquals(2, cal.divide(a, b));
         Assertions.assertNotEquals(289, cal.divide(a, b));
     }
-
-    @Test
-    void failingTest() {
-        Assertions.assertEquals(1,2);
-    }
 }
