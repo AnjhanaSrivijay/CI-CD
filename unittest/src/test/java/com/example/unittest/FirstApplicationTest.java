@@ -55,11 +55,11 @@ public class FirstApplicationTest {
         Assertions.assertNotEquals(48, cal.multiply(a, b));
     }
 
-/*    @Test
+    @Test
     void doDivision() {
         int a = 8;
         int b = 4;
         Assertions.assertEquals(2, cal.divide(a, b));
         Assertions.assertNotEquals(289, cal.divide(a, b));
-    }*/
+    }
 }
