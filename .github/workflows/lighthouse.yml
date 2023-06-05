@@ -15,4 +15,3 @@ jobs:
        uses: foo-software/lighthouse-check-action@master
        with:
          urls: 'https://webshop-agil-testautomatiserare.netlify.app'
-         gitHubAccessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
