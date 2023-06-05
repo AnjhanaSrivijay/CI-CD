@@ -14,6 +14,5 @@ jobs:
      - name: Audit URLs using Lighthouse
        uses: justinribeiro/lighthouse-action@master
        with:
-          secret: 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
           url: https://webshop-agil-testautomatiserare.netlify.app
           wptConnectionSpeed: threegfast
