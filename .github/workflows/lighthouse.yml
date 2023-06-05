@@ -11,8 +11,16 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-    - name: Audit live URL
-      uses: mdsadiq/lighthouse-compare@v1.2.0
-      with:
-        lhciServerURL: https://example.com
-        githubToken: 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
+     - name: Audit URLs using Lighthouse
+       uses: treosh/lighthouse-ci-action@v10
+       with:
+        runs: 3
+        urls: |
+          https://webshop-agil-testautomatiserare.netlify.app
+          
+     - name: Lighthouse Report
+       uses: ./ # Uses an action in the root directory
+       if: always()
+       with:
+        reports: '.lighthouseci'
+        github-token: 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
