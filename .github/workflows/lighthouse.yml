@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Audit live URL
-      uses: jakejarvis/lighthouse-action@master
+      uses: mdsadiq/lighthouse-compare@v1.2.0
       with:
-        url: 'https://webshop-agil-testautomatiserare.netlify.app'
+        lhciServerURL: https://example.com
+        githubToken: ${{ secret.LH_COMPARE_GITHUB_APP_TOKEN }}
