@@ -1,0 +1,19 @@
+name: Lighthouse Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  lighthouse-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compare lighthouse data
+        uses: mdsadiq/lighthouse-compare@v1.2.0
+        with:
+          lhciServerURL: https://webshop-agil-testautomatiserare.netlify.app
+          githubToken: ${{ secret.LH_COMPARE_GITHUB_APP_TOKEN }}
