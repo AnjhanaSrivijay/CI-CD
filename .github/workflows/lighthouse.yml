@@ -16,3 +16,4 @@ jobs:
         uses: mdsadiq/lighthouse-compare@v1.2.0
         with:
           lhciServerURL: https://webshop-agil-testautomatiserare.netlify.app
+           githubToken: "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"
