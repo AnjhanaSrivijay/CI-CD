@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Audit URLs using Lighthouse
-       uses: foo-software/lighthouse-check-action@master
+       uses: justinribeiro/lighthouse-action@master
        with:
-         urls: 'https://webshop-agil-testautomatiserare.netlify.app'
+          secret: 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
+          url: 'https://webshop-agil-testautomatiserare.netlify.app'
