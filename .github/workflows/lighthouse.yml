@@ -15,4 +15,5 @@ jobs:
        uses: justinribeiro/lighthouse-action@master
        with:
           secret: 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
-          url: 'https://webshop-agil-testautomatiserare.netlify.app'
+          url: https://webshop-agil-testautomatiserare.netlify.app
+          wptConnectionSpeed: threegfast
